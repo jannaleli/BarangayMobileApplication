@@ -1,0 +1,6 @@
+framework module Pods_BarangayInformationManagementSystem {
+  umbrella header "Pods-BarangayInformationManagementSystem-umbrella.h"
+
+  export *
+  module * { export * }
+}

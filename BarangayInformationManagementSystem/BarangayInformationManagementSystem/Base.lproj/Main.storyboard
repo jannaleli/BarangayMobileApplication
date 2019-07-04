@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C72-ej-Hla">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="4ug-9R-6vB">
+            <objects>
+                <tableViewController id="Ogs-A6-SMe" customClass="News" customModule="BarangayInformationManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="700" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mnu-bS-laR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoldingCell" rowHeight="700" id="YR4-JZ-qlE" customClass="FoldingCell" customModule="FoldingCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="700"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YR4-JZ-qlE" id="zQX-qi-Znw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="699.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVS-AS-PEZ">
+                                            <rect key="frame" x="8" y="80" width="359" height="279"/>
+                                            <color key="backgroundColor" red="1" green="0.41610414530000001" blue="0.44515428620000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="279" id="dfQ-4t-a02"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DW-Ih-cBo" customClass="RotatedView" customModule="FoldingCell">
+                                            <rect key="frame" x="8" y="8" width="359" height="64"/>
+                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="CT0-cM-Yqr"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="JVS-AS-PEZ" secondAttribute="trailing" constant="8" id="4jf-KF-DSx"/>
+                                        <constraint firstAttribute="trailing" secondItem="5DW-Ih-cBo" secondAttribute="trailing" constant="8" id="87k-5D-CA5"/>
+                                        <constraint firstItem="5DW-Ih-cBo" firstAttribute="leading" secondItem="zQX-qi-Znw" secondAttribute="leading" constant="8" id="9GN-Bx-2Yj"/>
+                                        <constraint firstItem="JVS-AS-PEZ" firstAttribute="top" secondItem="5DW-Ih-cBo" secondAttribute="bottom" constant="8" id="EwX-rF-Zoe"/>
+                                        <constraint firstItem="JVS-AS-PEZ" firstAttribute="leading" secondItem="zQX-qi-Znw" secondAttribute="leading" constant="8" id="SD0-SI-y0a"/>
+                                        <constraint firstItem="JVS-AS-PEZ" firstAttribute="top" secondItem="zQX-qi-Znw" secondAttribute="top" constant="80" id="W60-gk-FPa"/>
+                                        <constraint firstAttribute="bottom" secondItem="JVS-AS-PEZ" secondAttribute="bottom" constant="8" id="rC5-Ri-bMN"/>
+                                        <constraint firstItem="5DW-Ih-cBo" firstAttribute="top" secondItem="zQX-qi-Znw" secondAttribute="top" constant="8" id="rPK-ky-lWz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="containerView" destination="JVS-AS-PEZ" id="unj-5R-w68"/>
+                                    <outlet property="containerViewTop" destination="EwX-rF-Zoe" id="UOd-K5-hW9"/>
+                                    <outlet property="foregroundView" destination="5DW-Ih-cBo" id="P5t-nP-M90"/>
+                                    <outlet property="foregroundViewTop" destination="rPK-ky-lWz" id="BV3-74-qjV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ogs-A6-SMe" id="HHI-NT-MzI"/>
+                            <outlet property="delegate" destination="Ogs-A6-SMe" id="tTP-Lh-f7b"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" image="drop" id="iue-cm-sIX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06U-fl-lQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2100" y="760.56971514242889"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ilb-vo-RvB">
+            <objects>
+                <viewController id="CSK-Fy-kyF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Abh-s1-q5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="r4E-rh-O8t"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="drop" id="4bT-6n-6fO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kp1-o5-zL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388" y="908.9955022488756"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="7zd-2b-x6M">
+            <objects>
+                <viewController id="9jw-Ch-vAs" customClass="Clearance" customModule="BarangayInformationManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHY-Tt-Ai9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSg-aU-7HC" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="114.5" y="195" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PIZ-fn-1SV"/>
+                                    <constraint firstAttribute="width" constant="146" id="VcD-jY-uRE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Apply Clearance">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-2x-zls" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="114.5" y="241" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Apply Business Permit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1A-a9-YA3" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="114.5" y="291" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Check Status">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GSg-aU-7HC" firstAttribute="top" secondItem="sEw-Ns-is6" secondAttribute="top" constant="175" id="28y-KI-NiY"/>
+                            <constraint firstItem="ebs-2x-zls" firstAttribute="height" secondItem="GSg-aU-7HC" secondAttribute="height" id="6FJ-nh-8w6"/>
+                            <constraint firstItem="T1A-a9-YA3" firstAttribute="width" secondItem="ebs-2x-zls" secondAttribute="width" id="GIH-rK-pYd"/>
+                            <constraint firstItem="ebs-2x-zls" firstAttribute="top" secondItem="GSg-aU-7HC" secondAttribute="bottom" constant="16" id="Nsd-9U-MvU"/>
+                            <constraint firstItem="T1A-a9-YA3" firstAttribute="centerX" secondItem="ebs-2x-zls" secondAttribute="centerX" id="Vao-2x-ceL"/>
+                            <constraint firstItem="ebs-2x-zls" firstAttribute="width" secondItem="GSg-aU-7HC" secondAttribute="width" id="jS4-vd-4Lp"/>
+                            <constraint firstItem="T1A-a9-YA3" firstAttribute="top" secondItem="ebs-2x-zls" secondAttribute="bottom" constant="20" id="s6T-ht-Xnn"/>
+                            <constraint firstItem="ebs-2x-zls" firstAttribute="centerX" secondItem="GSg-aU-7HC" secondAttribute="centerX" id="u68-mn-5Mk"/>
+                            <constraint firstItem="T1A-a9-YA3" firstAttribute="height" secondItem="ebs-2x-zls" secondAttribute="height" id="y29-31-Ewq"/>
+                            <constraint firstItem="GSg-aU-7HC" firstAttribute="centerX" secondItem="sEw-Ns-is6" secondAttribute="centerX" id="yNa-T5-NgL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sEw-Ns-is6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icon_pin" id="RDf-DQ-2Yo"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="applyBusinessPermit" destination="ebs-2x-zls" id="DMN-cP-jey"/>
+                        <outlet property="applyClearance" destination="GSg-aU-7HC" id="4jB-tm-ihe"/>
+                        <outlet property="checkStatus" destination="T1A-a9-YA3" id="6WU-3y-lUA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0l-8A-sXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-770.39999999999998" y="908.9955022488756"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="dcU-bL-H7f">
+            <objects>
+                <viewController id="hoF-bq-OvS" customClass="ComplaintsManagement" customModule="BarangayInformationManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9vd-lQ-14E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iSp-Md-8uh">
+                                <rect key="frame" x="16" y="41" width="343" height="440"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3Iw-nI-qPS"/>
+                                    <constraint firstAttribute="height" constant="440" id="F5E-yh-Vth"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnO-57-ic3" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="114.5" y="505" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="5MJ-Jt-RdX"/>
+                                    <constraint firstAttribute="height" constant="30" id="s39-jG-IuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Submit Case">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm3-3B-hgh" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="114.5" y="551" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Check Status">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HnO-57-ic3" firstAttribute="top" secondItem="iSp-Md-8uh" secondAttribute="bottom" constant="24" id="BuD-U6-wZf"/>
+                            <constraint firstItem="pm3-3B-hgh" firstAttribute="top" secondItem="HnO-57-ic3" secondAttribute="bottom" constant="16" id="E2D-A7-c2r"/>
+                            <constraint firstItem="pm3-3B-hgh" firstAttribute="centerX" secondItem="HnO-57-ic3" secondAttribute="centerX" id="GPV-yL-o8E"/>
+                            <constraint firstItem="HnO-57-ic3" firstAttribute="centerX" secondItem="iSp-Md-8uh" secondAttribute="centerX" id="QTn-ZD-gtA"/>
+                            <constraint firstItem="iSp-Md-8uh" firstAttribute="top" secondItem="UCw-tl-Kh5" secondAttribute="top" constant="21" id="VnZ-1C-ZgE"/>
+                            <constraint firstItem="UCw-tl-Kh5" firstAttribute="trailing" secondItem="iSp-Md-8uh" secondAttribute="trailing" constant="16" id="bz1-Qp-UU2"/>
+                            <constraint firstItem="iSp-Md-8uh" firstAttribute="leading" secondItem="UCw-tl-Kh5" secondAttribute="leading" constant="16" id="dQQ-vG-DK5"/>
+                            <constraint firstItem="pm3-3B-hgh" firstAttribute="height" secondItem="HnO-57-ic3" secondAttribute="height" id="s5H-uH-MtQ"/>
+                            <constraint firstItem="pm3-3B-hgh" firstAttribute="width" secondItem="HnO-57-ic3" secondAttribute="width" id="yKt-ar-NBp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UCw-tl-Kh5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tools" id="3if-hZ-tic"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="checkNearby" destination="pm3-3B-hgh" id="1Ux-4x-wW8"/>
+                        <outlet property="mapView" destination="iSp-Md-8uh" id="mwZ-Jx-nrT"/>
+                        <outlet property="submitComplaints" destination="HnO-57-ic3" id="7ot-yX-Vvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lf-Tc-6ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="1079.9100449775112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DRn-R7-DHV">
+            <objects>
+                <viewController id="PWE-1d-8cc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wfu-IB-7np">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feb-Z4-fsc" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="114.5" y="266" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Cwu-mi-tJR"/>
+                                    <constraint firstAttribute="height" constant="30" id="fTh-N7-2J8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Apply Clearance">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="feb-Z4-fsc" firstAttribute="top" secondItem="Nff-FZ-baa" secondAttribute="top" constant="246" id="RTe-5M-WI5"/>
+                            <constraint firstItem="feb-Z4-fsc" firstAttribute="centerX" secondItem="Nff-FZ-baa" secondAttribute="centerX" id="hok-fa-q00"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nff-FZ-baa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UX6-Th-5sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="1080"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jqn-2m-zx3">
+            <objects>
+                <viewController id="fuQ-gm-zvb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJa-jd-5vv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYy-Wd-Fnb" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="43" y="68" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Government ID"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8p-Pf-m78" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="43" y="130" width="271" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="NBI Clearance ID"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-hf-Hvi" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="102" y="226" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kUn-3D-x9c"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nKC-E1-FUp"/>
+                                    <constraint firstAttribute="width" constant="146" id="ox1-mw-1vW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="rBd-xT-0cU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Apply Business Permit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mXQ-hf-Hvi" firstAttribute="top" secondItem="n8p-Pf-m78" secondAttribute="bottom" constant="66" id="1le-XJ-72X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ega-Zy-GoY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGj-k2-ld7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152.8" y="1079.9100449775112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R7a-r4-sbD">
+            <objects>
+                <viewController id="18p-BD-zcR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8X-dk-yKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBl-gt-WvD">
+                                <rect key="frame" x="43" y="141" width="63" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="weather"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGu-MV-Se2">
+                                <rect key="frame" x="154" y="141" width="67" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sick"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcs-go-9lr">
+                                <rect key="frame" x="43" y="286" width="71" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="noise"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6r-Xd-vME">
+                                <rect key="frame" x="267" y="145" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="dispute"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHa-8k-7Ro">
+                                <rect key="frame" x="154" y="278" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="trash"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-Do-AUF">
+                                <rect key="frame" x="276" y="281" width="77" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pests"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptV-3e-gMh">
+                                <rect key="frame" x="31" y="437" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="animal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-B8-Rsy">
+                                <rect key="frame" x="143" y="437" width="88" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facilities"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxP-SE-EpC">
+                                <rect key="frame" x="268" y="443" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="road"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5am-PJ-saF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzg-Ed-CBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152.8" y="1743.778110944528"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0rK-ZP-o9T">
+            <objects>
+                <viewController id="giM-Qq-4fx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qe8-Jo-QSu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="28d-cV-Fly" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="100" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kie-96-nl9" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="156" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HbM-aj-gRT" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="217" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-Sx-jfK" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="270" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4s-Bo-kdn" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="336" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-vm-3mj" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="397" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-c3-JMz" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="100" y="471" width="175" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" red="0.67070630939999998" green="1" blue="0.52211229579999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" red="0.95194506800000001" green="1" blue="0.18309992250000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Submit Case"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0Gc-eL-IBT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xW-wl-VQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.5999999999999" y="1737.481259370315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2fQ-zd-Meb">
+            <objects>
+                <viewController id="771-51-jDj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSN-rD-iHR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JSo-wH-SRv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0B-Th-3AP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="338"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="x7F-lw-UvZ">
+            <objects>
+                <viewController id="SeP-f9-983" customClass="TreeViewController" customModule="BarangayInformationManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" image="settings" id="8zn-sP-VlO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZO8-KU-lxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="-327"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MtR-fs-Nlq">
+            <objects>
+                <tabBarController id="C72-ej-Hla" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b1a-Ov-Zz2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CSK-Fy-kyF" kind="relationship" relationship="viewControllers" id="YJL-2f-5dx"/>
+                        <segue destination="9jw-Ch-vAs" kind="relationship" relationship="viewControllers" id="e1i-4E-l65"/>
+                        <segue destination="hoF-bq-OvS" kind="relationship" relationship="viewControllers" id="mqZ-n0-G8a"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuy-3T-JM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-769" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="animal" width="512" height="512"/>
+        <image name="dispute" width="478.75323486328125" height="478.75323486328125"/>
+        <image name="drop" width="24" height="24"/>
+        <image name="facilities" width="512" height="512"/>
+        <image name="icon_pin" width="30" height="30"/>
+        <image name="noise" width="384" height="384"/>
+        <image name="pests" width="512" height="512"/>
+        <image name="road" width="512" height="512"/>
+        <image name="settings" width="30" height="30"/>
+        <image name="sick" width="485.05264282226562" height="485.05264282226562"/>
+        <image name="tools" width="30" height="30"/>
+        <image name="trash" width="384" height="384"/>
+        <image name="weather" width="384" height="384"/>
+    </resources>
+</document>
