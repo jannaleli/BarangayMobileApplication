@@ -24,6 +24,7 @@
 import UIKit
 
 /// UITableViewCell with folding animation
+@available(iOS 9.0, *)
 open class FoldingCell: UITableViewCell {
     
     @objc open var isUnfolded = false
@@ -398,6 +399,7 @@ open class FoldingCell: UITableViewCell {
 
 // MARK: RotatedView
 
+@available(iOS 9.0, *)
 open class RotatedView: UIView {
     
     private enum Const {
@@ -407,6 +409,7 @@ open class RotatedView: UIView {
     
     var hiddenAfterAnimation = false
     var backView: RotatedView?
+  
     
     func addBackView(_ height: CGFloat, color: UIColor) {
         let view = RotatedView(frame: CGRect.zero)
@@ -431,6 +434,7 @@ open class RotatedView: UIView {
     }
 }
 
+@available(iOS 9.0, *)
 extension RotatedView: CAAnimationDelegate {
     
     func rotatedX(_ angle: CGFloat) {

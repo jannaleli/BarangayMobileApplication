@@ -2,8 +2,50 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>To get your location when filing for complaint. </string>
+	<key>AWS</key>
+	<dict>
+		<key>CognitoUserPool</key>
+		<dict>
+			<key>Default</key>
+			<dict>
+				<key>CognitoAuthScopes</key>
+				<array>
+					<string>aws.cognito.signin.user.admin</string>
+				</array>
+				<key>CognitoAuthSignInRedirectUri</key>
+				<string>bms://signin</string>
+				<key>CognitoAuthSignOutRedirectUri</key>
+				<string>bms://signout</string>
+				<key>CognitoAuthWebDomain</key>
+				<string>https://lomadegatobms.auth.ap-southeast-1.amazoncognito.com</string>
+				<key>CognitoUserPoolAppClientId</key>
+				<string>487b8mup2fgpdho56meg129uf6</string>
+				<key>CognitoUserPoolAppClientSecret</key>
+				<string>3n4tdke88psfkobhj22oson0do3016746mk3hcpjlo4hdg4904v</string>
+			</dict>
+		</dict>
+		<key>CredentialsProvider</key>
+		<dict>
+			<key>CognitoIdentity</key>
+			<dict>
+				<key>Default</key>
+				<dict>
+					<key>PoolId</key>
+					<string>ap-southeast-1:d31cf569-2c5b-42da-b021-185fe95ecc44</string>
+					<key>Region</key>
+					<string>ap-southeast-1</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>S3TransferManager</key>
+		<dict>
+			<key>Default</key>
+			<dict>
+				<key>Region</key>
+				<string>ap-southeast-1</string>
+			</dict>
+		</dict>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -18,9 +60,72 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.lomadegato.bms</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>bms</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>15</string>
+	<key>DynamoDBObjectMapper</key>
+	<dict>
+		<key>Default</key>
+		<dict>
+			<key>Region</key>
+			<string>ap-southeast-1</string>
+		</dict>
+	</dict>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-7625476876021461~6669930536</string>
 	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>amazonaws.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionMinimumTLSVersion</key>
+				<string>TLSv1.0</string>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>amazonaws.com.cn</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionMinimumTLSVersion</key>
+				<string>TLSv1.0</string>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Need your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Need your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To get your location when filing for complaint. </string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo</string>
+	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

@@ -21,6 +21,27 @@ target 'BarangayInformationManagementSystem' do
   pod 'FoldingCell'
   pod 'LGButton'
   pod 'TransitionButton'
+  pod 'YPImagePicker'
+  pod 'AWSAPIGateway'
+  pod 'AWSS3'
+  pod 'Pickle'
+  pod 'Eureka', '~> 4.0'
+  pod 'Alamofire'
+  pod 'JASON', '~> 3.0'
+  pod 'paper-onboarding'
+  pod 'SwiftyAvatar', '~> 1.1'
+  pod 'GenericPasswordRow', '~> 3.0'
+  pod 'Google-Mobile-Ads-SDK'
+  
+
+  pod 'AWSUserPoolsSignIn'
+  pod 'AWSAuthUI'
+  #pod 'AWSCognitoAuth'
+  # pod 'AWSMobileClient', '~> 2.6.13'
+pod 'TweeTextField'
+  
+  # other pods . . .
+  pod 'AWSMobileClient', '~> 2.9.0'
   target 'BarangayInformationManagementSystemTests' do
     inherit! :search_paths
     # Pods for testing

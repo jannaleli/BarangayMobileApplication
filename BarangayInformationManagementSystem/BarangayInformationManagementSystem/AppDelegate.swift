@@ -8,25 +8,43 @@
 
 import UIKit
 import CoreData
-
-
+import AWSS3
+import AWSCore
+import AWSMobileClient
+import GoogleMobileAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     func applicationDidFinishLaunching(_ application: UIApplication) {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let navigationController = UINavigationController(rootViewController: MagazineViewController())
-        
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+
       
+    }
+    
+    func application(_ application: UIApplication, open url: URL,
+                     sourceApplication: String?, annotation: Any) -> Bool {
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, open: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
+        
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+        
+        let accessKey = "AKIAIZGJAQVC2ET4ITYQ"
+        let secretKey = "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"
+        let credentialsProvider = AWSStaticCredentialsProvider(accessKey: accessKey, secretKey: secretKey)
+        let configuration = AWSServiceConfiguration(region: AWSRegionType.APSoutheast1, credentialsProvider: credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-7625476876021461~6669930536")
+        let cognitoAuth = AWSCognitoAuth.default()
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, didFinishLaunchingWithOptions:
+            launchOptions)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
