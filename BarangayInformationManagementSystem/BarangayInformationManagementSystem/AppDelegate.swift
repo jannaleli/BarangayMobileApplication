@@ -35,8 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        let accessKey = "AKIAIZGJAQVC2ET4ITYQ"
-        let secretKey = "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"
+        let accessKey = ""
+        let secretKey = ""
         let credentialsProvider = AWSStaticCredentialsProvider(accessKey: accessKey, secretKey: secretKey)
         let configuration = AWSServiceConfiguration(region: AWSRegionType.APSoutheast1, credentialsProvider: credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
