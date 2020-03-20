@@ -25,7 +25,7 @@ open class BusinessPermits: FormViewController {
         
         let user_id: String = "\(CGFloat.random(in: 1...1000))"
         let username: String =  UserDefaults.standard.string(forKey: "Username") ?? ""
-        let attachment_id = "12345"
+        let attachment_id = BarangayUtil().dateFormatter(date: Date())
         let sec_no: String = form.rowBy(tag: "sec_no")!.value ?? "null"
         let business_building_no: String = form.rowBy(tag: "business_building_no")!.value ?? "null"
         let business_street: String = form.rowBy(tag: "business_street")!.value ?? "null"
@@ -45,9 +45,8 @@ open class BusinessPermits: FormViewController {
         let status: String = "NEW"
         let gross_sale: String = form.rowBy(tag: "gross_sale")!.value ?? "null"
         let no_of_unit: String = form.rowBy(tag: "no_of_unit")!.value ?? "null"
- 
-        
-      
+        let approval_date: String = "Pending"//BarangayUtil().dateFormatter(date: Date())
+
         let headers = [
             "Content-Type": "application/json",
             "Accept": "*/*",
@@ -79,7 +78,7 @@ open class BusinessPermits: FormViewController {
             "no_units": no_of_unit,
             "status": status,
             "gross_sale": gross_sale,
-            "approval_date": "null"
+            "approval_date": approval_date
             ] as [String : Any]
         
         let postData = try! JSONSerialization.data(withJSONObject: parameters, options: [])
@@ -190,10 +189,10 @@ open class BusinessPermits: FormViewController {
 
                 
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                      
+                      cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
             
@@ -204,10 +203,10 @@ open class BusinessPermits: FormViewController {
                 row.tag = "business_name"
                 
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
             <<< TextRow(){ row in
@@ -217,10 +216,10 @@ open class BusinessPermits: FormViewController {
                 
                 
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
 
@@ -230,10 +229,10 @@ open class BusinessPermits: FormViewController {
                 row.tag = "business_street"
                 
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        
+                          cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
             
@@ -245,10 +244,10 @@ open class BusinessPermits: FormViewController {
                    row.tag = "business_building_no"
                
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        
+                          cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
             
@@ -261,10 +260,10 @@ open class BusinessPermits: FormViewController {
                 row.tag = "no_of_unit"
              
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        
+                          cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
             
@@ -273,7 +272,14 @@ open class BusinessPermits: FormViewController {
                 $0.title = ""
                 $0.tag = "status"
                 $0.options = ["New", "Renewal"]
+                $0.add(rule: RuleRequired())
+                $0.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
+            
             
             
 
@@ -292,7 +298,12 @@ open class BusinessPermits: FormViewController {
                 })
                 row.title = "Capitalization (New Business)"
                 row.tag = "capitalization"
-          
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             
 
@@ -306,89 +317,139 @@ open class BusinessPermits: FormViewController {
                 })
                 row.tag = "gross_sale"
                 row.title = "Gross Sales (Renewal)"
-              
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
-            <<< SwitchRow("rentedBusiness"){
-                $0.title = "Is the business rented?"
-            }
+           // <<< SwitchRow("rentedBusiness"){
+           //     $0.title = "Is the business rented?"
+           // }
 
             +++ Section("Lessor Details (if Rented)")
    
             
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+            //    row.hidden = Condition.function(["rentedBusiness"], { form in
+            //        return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+             //   })
                 row.title = "Name"
                   row.tag = "lessor_name"
-       
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+              //  row.hidden = Condition.function(["rentedBusiness"], { form in
+             //       return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+              //  })
                 row.title = "Email Address"
                   row.tag = "lessor_emailaddr"
-  
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+              //  row.hidden = Condition.function(["rentedBusiness"], { form in
+               //     return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+              //  })
                 row.title = "Building Number"
                  row.tag = "lessor_bldg_no"
-         
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+           //     row.hidden = Condition.function(["rentedBusiness"], { form in
+         //           return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+         //       })
                 row.title = "Street"
                 row.tag = "lessor_street"
-              
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+             //   row.hidden = Condition.function(["rentedBusiness"], { form in
+             //       return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+             //   })
                 row.title = "Barangay"
                 row.tag = "lessor_barangay"
-            
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+               // row.hidden = Condition.function(["rentedBusiness"], { form in
+              //      return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+               // })
                 row.title = "City"
                 row.tag = "lessor_city"
-       
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+          //      row.hidden = Condition.function(["rentedBusiness"], { form in
+          //          return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+          //      })
                 row.title = "Province"
                 row.tag = "lessor_province"
-              
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
 
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+              //  row.hidden = Condition.function(["rentedBusiness"], { form in
+             //       return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+             //   })
                 row.title = "Subdivision"
                  row.tag = "lessor_subdv"
-              
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
             
 
             <<< TextRow(){ row in
-                row.hidden = Condition.function(["rentedBusiness"], { form in
-                    return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
-                })
+            //    row.hidden = Condition.function(["rentedBusiness"], { form in
+              //      return !((form.rowBy(tag: "rentedBusiness") as? SwitchRow)?.value ?? false)
+             //   })
                 row.title = "Montly Rental"
                 row.tag = "monthly_rental"
-                
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
         }
 
 

@@ -12,9 +12,10 @@ import Eureka
 import UIKit
 import MapKit
 
+
 open class ComplaintsDetail: FormViewController {
     
-    
+
     var category: String?
     var longitude: Double = 0.0
     var latitude: Double = 0.0
@@ -152,25 +153,32 @@ open class ComplaintsDetail: FormViewController {
                             $0.title = "Category"
                             $0.tag = "category"
                             $0.cancelTitle = "Dismiss"
-                            $0.selectorTitle = "Who is there?"
+                            $0.selectorTitle = "Pick"
                             $0.options = ["Roads & Footpaths", "Public Facilities", "Pests", "Stray Animals", "Drinking Water", "Drains & Sewers", "Parks & Greenery", "Public Dispute", "Unecessary Noise", "Others"]
                             $0.value = "Stray Animals"
+                            $0.add(rule: RuleRequired())
+                            $0.validationOptions = .validatesOnDemand
                             }.onChange { row in
                                 print(row.value ?? "No Value")
                             }
                             .onPresent{ _, to in
                                 to.view.tintColor = .purple
-                        }
+                            }.cellUpdate { cell, row in
+                                if !row.isValid {
+                                    cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                                }
+            }
             <<< TextAreaRow(){
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange
                 $0.placeholder = "Complaint Description"
                 $0.tag = "description"
                 $0.textAreaHeight = .dynamic(initialTextViewHeight: 300)
-                
+                $0.add(rule: RuleRequired())
+                $0.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        cell.textView.tintColor = .red
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
             }
             
@@ -181,19 +189,31 @@ open class ComplaintsDetail: FormViewController {
                 longitude = location.coordinate.longitude
                 latitude = location.coordinate.latitude
                 $0.value = CLLocation(latitude: 14.776485, longitude: 121.019054)
+                $0.add(rule: RuleRequired())
+                $0.validationOptions = .validatesOnDemand
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
             }
-            <<< ImageRow(){
-                $0.tag = "uploadImage"
-                $0.title = "Photo"
-                
-            }
-   
+//            <<< ImageRow(){
+//                $0.tag = "uploadImage"
+//                $0.title = "Photo"
+//                
+//            }
+//   
                     <<< SegmentedRow<String>(){
                         let names = [UserDefaults.standard.string(forKey: "Username") ?? "", "Anonymous"]
                         $0.options = names
                         $0.value = $0.options?.last
                         $0.tag = "Username"
-                    }
+                        $0.add(rule: RuleRequired())
+                        $0.validationOptions = .validatesOnDemand
+                        }.cellUpdate { cell, row in
+                            if !row.isValid {
+                                cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                            }
+        }
         
 
         

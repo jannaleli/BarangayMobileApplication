@@ -12,6 +12,7 @@ import AWSS3
 import AWSCore
 import AWSMobileClient
 import GoogleMobileAds
+import GoogleMaps
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -34,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-        let accessKey = ""
-        let secretKey = ""
+        GMSServices.provideAPIKey("AIzaSyDsURMkCygf23xg2jUPcTU8zPAH8m8MRnw")
+        let accessKey = "AKIAIQQLNLJEN3POLSOQ"
+        let secretKey = "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"
         let credentialsProvider = AWSStaticCredentialsProvider(accessKey: accessKey, secretKey: secretKey)
         let configuration = AWSServiceConfiguration(region: AWSRegionType.APSoutheast1, credentialsProvider: credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration

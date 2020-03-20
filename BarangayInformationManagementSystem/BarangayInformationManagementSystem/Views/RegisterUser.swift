@@ -38,14 +38,16 @@ open class RegisterUser: FormViewController {
                             <<< EmailRow() {
                                 $0.tag = "emailAddr"
                                 $0.title = "Email Address"
-                                $0.value = "a@b.com"
+                                $0.value = ""
                                 $0.add(rule: RuleRequired())
                                 $0.add(rule: RuleEmail())
-                                 $0.validationOptions = .validatesOnChange
+                                 $0.validationOptions = .validatesOnDemand
                                 }.cellUpdate { cell, row in
                                     if !row.isValid {
-                                        cell.textField.textColor = .red
+                                         cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                                     }
+                                    
+                                
                 }
                 /*
                 <<< TextRow(){ row in
@@ -65,21 +67,23 @@ open class RegisterUser: FormViewController {
                      $0.tag = "password"
                     $0.value = "password"
                     $0.add(rule: RuleRequired())
-                    $0.validationOptions = .validatesOnChange
+                    $0.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
+                        
+                        
                 }
                 <<< TextRow(){ row in
                     row.title = "First Name"
                      row.tag = "firstname"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< TextRow(){ row in
@@ -87,10 +91,10 @@ open class RegisterUser: FormViewController {
                      row.tag = "lastname"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< PhoneRow(){
@@ -98,35 +102,43 @@ open class RegisterUser: FormViewController {
                     $0.tag = "mobilenumber"
                     
                     $0.add(rule: RuleRequired())
-                    $0.validationOptions = .validatesOnChange
+                    $0.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< DateRow(){
                     $0.title = "Birth Date"
                     $0.tag = "date"
+                    $0.add(rule: RuleRequired())
+                    $0.validationOptions = .validatesOnDemand
                     $0.value = Date(timeIntervalSinceReferenceDate: 0)
+                    }.cellUpdate { cell, row in
+                        if !row.isValid {
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                        }
                 }
                 <<< TextRow(){ row in
                     row.title = "Birth Place"
                     row.tag = "place_of_birth"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< SegmentedRow<String>(){
                     $0.title = ""
                     $0.tag = "gender"
+                     $0.add(rule: RuleRequired())
+                     $0.validationOptions = .validatesOnDemand
                     $0.options = ["Male", "Female"]
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< SegmentedRow<String>(){
@@ -135,10 +147,10 @@ open class RegisterUser: FormViewController {
                     $0.options = ["Single", "Married", "Widowed"]
                     
                     $0.add(rule: RuleRequired())
-                    $0.validationOptions = .validatesOnChange
+                    $0.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< TextRow(){ row in
@@ -146,10 +158,10 @@ open class RegisterUser: FormViewController {
                     row.tag = "address"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< TextRow(){ row in
@@ -157,10 +169,10 @@ open class RegisterUser: FormViewController {
                     row.tag = "zip_code"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 
@@ -169,19 +181,20 @@ open class RegisterUser: FormViewController {
                     row.tag = "gross_income"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< TextRow(){ row in
                     row.title = "Tin Number"
                     row.tag = "tin_no"
-                    
+                    row.add(rule: RuleRequired())
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 <<< TextRow(){ row in
@@ -189,10 +202,10 @@ open class RegisterUser: FormViewController {
                     row.tag = "profession"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                             cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
                 
@@ -201,15 +214,22 @@ open class RegisterUser: FormViewController {
                      row.tag = "weight"
                     
                     row.add(rule: RuleRequired())
-                    row.validationOptions = .validatesOnChange
+                    row.validationOptions = .validatesOnDemand
+                    }.cellUpdate { cell, row in
+                        if !row.isValid {
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                        }
                 }
+                
                 <<< TextRow(){ row in
                     row.title = "Height (inches)"
                      row.tag = "height"
                     row.placeholder = ""
+                    row.add(rule: RuleRequired())
+                    row.validationOptions = .validatesOnDemand
                     }.cellUpdate { cell, row in
                         if !row.isValid {
-                            cell.textField.textColor = .red
+                            cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                         }
                 }
 
@@ -684,32 +704,32 @@ open class RegisterUser: FormViewController {
     
     func upload(src: String) {
         let results = self.form.validate()
-
+        
         if !results.isEmpty {
             self.showErrorAlert()
             return
         }
         let emailaddr = self.form.rowBy(tag: "emailAddr")!.value ?? ""
         
-        let address = self.form.rowBy(tag: "address")!.value ?? "null"
+        let address = self.form.rowBy(tag: "address")!.value ?? ""
         let birtdate =       BarangayUtil().dateFormatter(date: (self.form.rowBy(tag: "date") as! DateRow).value! )
         let createdate = BarangayUtil().dateFormatter(date: Date())
-        let firstname = self.form.rowBy(tag: "firstname")!.value ?? "null"
-        let lastname = self.form.rowBy(tag: "lastname")!.value ?? "null"
-        let mobilenumber = self.form.rowBy(tag: "mobilenumber")!.value ?? "null"
-        let zipcode = self.form.rowBy(tag: "zip_code")!.value ?? "null"
+        let firstname = self.form.rowBy(tag: "firstname")!.value ?? ""
+        let lastname = self.form.rowBy(tag: "lastname")!.value ?? ""
+        let mobilenumber = self.form.rowBy(tag: "mobilenumber")!.value ?? ""
+        let zipcode = self.form.rowBy(tag: "zip_code")!.value ?? ""
         let attachment_id = src
 
-        let civilStatus = self.form.rowBy(tag: "civil_status")!.value ?? "null"
-        let tinNo = self.form.rowBy(tag: "tin_no")!.value ?? "null"
-        let placeOfBirth = self.form.rowBy(tag: "place_of_birth")!.value ?? "null"
-        let weight = self.form.rowBy(tag: "weight")!.value ?? "null"
-        let height = self.form.rowBy(tag: "height")!.value ?? "null"
-        let profession = self.form.rowBy(tag: "profession")!.value ?? "null"
-        let grossIncome = self.form.rowBy(tag: "gross_income")!.value ?? "null"
-        let username = self.form.rowBy(tag: "username")!.value ?? "null"
-        let password = self.form.rowBy(tag: "password")!.value ?? "null"
-        let gender = self.form.rowBy(tag: "gender")!.value ?? "null"
+        let civilStatus = self.form.rowBy(tag: "civil_status")!.value ?? ""
+        let tinNo = self.form.rowBy(tag: "tin_no")!.value ?? ""
+        let placeOfBirth = self.form.rowBy(tag: "place_of_birth")!.value ?? ""
+        let weight = self.form.rowBy(tag: "weight")!.value ?? ""
+        let height = self.form.rowBy(tag: "height")!.value ?? ""
+        let profession = self.form.rowBy(tag: "profession")!.value ?? ""
+        let grossIncome = self.form.rowBy(tag: "gross_income")!.value ?? ""
+        let username = emailaddr//self.form.rowBy(tag: "username")!.value ?? ""
+        let password = self.form.rowBy(tag: "password")!.value ?? ""
+        let gender = self.form.rowBy(tag: "gender")!.value ?? ""
         let headers = [
             "Content-Type": "application/json",
             "Accept": "*/*",
@@ -718,7 +738,7 @@ open class RegisterUser: FormViewController {
             "Content-Length": "669",
             "Connection": "keep-alive",
         ]
-        
+
 
         let parameters = [
 
@@ -779,7 +799,7 @@ open class RegisterUser: FormViewController {
     }
     
     func awsSignUp(username: String, password: String) {
-        
+        UserDefaults.standard.set(username, forKey: "Username")
         AWSMobileClient.sharedInstance().signUp(username: username,
                                                 password: password) { (signUpResult, error) in
                                                     if let signUpResult = signUpResult {
@@ -789,7 +809,16 @@ open class RegisterUser: FormViewController {
                                                             self.printableAlert(message: "User is signed up and confirmed!")
                                                         case .unconfirmed:
                                                         //open confirm sign up
-                                                            self.printableAlert(message: "An administrator will confirm your sign up!")
+                                                            //
+                                                            DispatchQueue.main.async{
+                                                                //put your code here
+                                                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                                                let vc = storyboard.instantiateViewController(withIdentifier:"confirmSignUp") as! ConfirmSignUpViewController
+                                                                self.present(vc, animated: true)
+                                                            }
+                                                            
+                                                        
+                                                          //  self.printableAlert(message: "An administrator will confirm your sign up!")
                                                         case .unknown:
                                                             self.printableAlert(message: "Please wait for your confirmation email.")
                                                         }

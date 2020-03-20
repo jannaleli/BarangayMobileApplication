@@ -74,7 +74,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>15</string>
+	<string>17</string>
 	<key>DynamoDBObjectMapper</key>
 	<dict>
 		<key>Default</key>

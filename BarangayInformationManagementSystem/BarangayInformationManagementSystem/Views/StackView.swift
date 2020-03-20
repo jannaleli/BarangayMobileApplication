@@ -26,7 +26,8 @@ class StackView: UITableViewCell {
         nameLabel.text = recipe.event_title
         prepTimeLabel.text = "Publish Date: \(recipe.event_date)"
       //  thumbnailImageView.image = UIImage(data: recipe.thumbnails)
-        smallImageView.image = UIImage(data: recipe.thumbnails)
+        smallImageView.image = UIImage(data: recipe.thumbnails)?.stretchableImage(withLeftCapWidth: 5, topCapHeight: 5)
+        
 
     }
     

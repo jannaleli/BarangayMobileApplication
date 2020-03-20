@@ -27,20 +27,26 @@ open class BarangayClearance: FormViewController {
                 $0.title = "Reason for Application"
                 $0.selectorTitle = "Reason"
                 $0.options = ["Employment", "Business Permit"]
+                $0.add(rule: RuleRequired())
+                $0.validationOptions = .validatesOnDemand
                 $0.value = "Choose One"
                 }
                 .onPresent { from, to in
                     to.popoverPresentationController?.permittedArrowDirections = .up
-        }
+                }.cellUpdate { cell, row in
+                    if !row.isValid {
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
+                    }
+            }
         
             <<< TextRow(){ row in
                 row.title = "Government ID (Passport/TIN/SSS/Etc.)"
                 row.tag = "governmentId"
                 row.add(rule: RuleRequired())
-                row.validationOptions = .validatesOnChange
+                row.validationOptions = .validatesOnDemand
                 }.cellUpdate { cell, row in
                     if !row.isValid {
-                        cell.textField.textColor = .red
+                        cell.backgroundColor = UIColor(red:0.95, green:0.64, blue:0.64, alpha:1.0)
                     }
         }
 }
@@ -57,11 +63,12 @@ open class BarangayClearance: FormViewController {
             self.showErrorAlert()
             return
         }
+        let expiration_date = "Pending"//BarangayUtil().dateFormatter(date: Date())
         let userId =  "\(CGFloat.random(in: 1...1000))"
         let username = UserDefaults.standard.string(forKey: "Username") ?? "null"
-        let expirationDate = "null"
+        let expirationDate = expiration_date
         let governmentID = form.rowBy(tag: "governmentId")!.value ?? "null"
-        let attachmentId = "2"
+        let attachmentId = BarangayUtil().dateFormatter(date: Date())
         let reason = form.rowBy(tag: "reason")!.value ?? "null"
         let status = "NEW"
 
@@ -81,7 +88,7 @@ open class BarangayClearance: FormViewController {
             "expiration_date": expirationDate,
             "government_id": governmentID,
             "attachment_id":attachmentId,
-            "reason": reason,
+            "reason": expiration_date,
             "status": "NEW"
             ] as [String : Any]
         

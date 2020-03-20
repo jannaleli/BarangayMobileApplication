@@ -13,7 +13,19 @@ import AWSAuthCore
 import AWSAuthUI
 import AWSMobileClient
 class ConfirmSignUpViewController : UIViewController {
-    @IBOutlet weak var confirmField: SkyFloatingLabelTextField!
+    @IBOutlet weak var confirmField: UITextField!
+    
+    func showErrorResponseAlert(message: String) {
+        DispatchQueue.main.async{
+            //put your code here
+            let alertController = UIAlertController(title: "Error!", message:
+                message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+    }
    
     @IBAction func confirm() {
         let confirmationCode = self.confirmField!.text!
@@ -25,6 +37,15 @@ class ConfirmSignUpViewController : UIViewController {
                                     switch(signUpResult.signUpConfirmationState) {
                                             case .confirmed:
                                             print("User is signed up and confirmed.")
+                                            DispatchQueue.main.async{
+                                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                                let vc = storyboard.instantiateViewController(withIdentifier: "loginCoordinator") as! LoginCoordinator
+                                                //   let navigationController = UINavigationController(rootViewController: vc)
+                                                
+                                                self.present(vc, animated: true, completion: nil)
+                                            }
+                                     
+                                        
                                             case .unconfirmed:
                                             print("User is not confirmed and needs verification via \(signUpResult.codeDeliveryDetails!.deliveryMedium) sent at \(signUpResult.codeDeliveryDetails!.destination!)")
                                                                     //open confirm sign up
@@ -34,9 +55,9 @@ class ConfirmSignUpViewController : UIViewController {
                             } else if let error = error {
                                 if let error = error as? AWSMobileClientError {
                                     switch(error) {
-                                    case .usernameExists(let message):
+                                    case .usernameExists(let message): self.showErrorResponseAlert(message: message)
                                     print(message)
-                                    default:
+                                    default: self.showErrorResponseAlert(message: "Wrong code displayed")
                                     break
                                     }
                             }

@@ -11,7 +11,8 @@ import UIKit
 import TransitionButton
 import MapKit
 import JASON
-
+import GoogleMaps
+import GooglePlaces
 
 import CoreLocation
 
@@ -19,6 +20,7 @@ class ComplaintsManagement: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var myCase: TransitionButton!
     @IBOutlet weak var submitCase: TransitionButton!
     @IBOutlet weak var mapView: MKMapView!
+         @IBOutlet private weak var googleMaps: GMSMapView!
     let regionRadius: CLLocationDistance = 1000
     weak var currentLocation: CLLocation?
     var locationManager = CLLocationManager()
@@ -37,6 +39,7 @@ class ComplaintsManagement: UIViewController, CLLocationManagerDelegate {
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
+      
         }
         
 
@@ -47,9 +50,19 @@ class ComplaintsManagement: UIViewController, CLLocationManagerDelegate {
         
     }
     func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
-                                                  latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+       
+       // mapView.setRegion(coordinateRegion, animated: true)
+        
+        DispatchQueue.main.async(execute: { () -> Void in
+            // 4: Stop the animation, here you have three options for the `animationStyle` property:
+            // .expand: useful when the task has been compeletd successfully and you want to expand the button and transit to another view controller in the completion callback
+            // .shake: when you want to reflect to the user that the task did not complete successfly
+            // .normal
+            let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                                      latitudinalMeters: self.regionRadius, longitudinalMeters: self.regionRadius)
+            self.googleMaps.camera = GMSCameraPosition(latitude: coordinateRegion.center.latitude, longitude: coordinateRegion.center.longitude, zoom: 15, bearing: 0, viewingAngle: 0)
+        })
+   
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -65,6 +78,16 @@ class ComplaintsManagement: UIViewController, CLLocationManagerDelegate {
 //                              coordinate: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
 //        mapView.addAnnotation(artwork)
 //        mapView.setRegion(coordinateRegion, animated: true)
+        DispatchQueue.main.async(execute: { () -> Void in
+            // 4: Stop the animation, here you have three options for the `animationStyle` property:
+            // .expand: useful when the task has been compeletd successfully and you want to expand the button and transit to another view controller in the completion callback
+            // .shake: when you want to reflect to the user that the task did not complete successfly
+            // .normal
+            let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                                      latitudinalMeters: self.regionRadius, longitudinalMeters: self.regionRadius)
+            self.googleMaps.camera = GMSCameraPosition(latitude: coordinateRegion.center.latitude, longitude: coordinateRegion.center.longitude, zoom: 15, bearing: 0, viewingAngle: 0)
+            
+        })
         locationManager.stopUpdatingLocation()
     }
     
@@ -144,19 +167,42 @@ class ComplaintsManagement: UIViewController, CLLocationManagerDelegate {
                     
                     
                     for each in json {
-                        let locationCoordinate = CLLocationCoordinate2D(latitude: Double(each["latitude"].string!) as! CLLocationDegrees, longitude: Double(each["longitude"].string!) as! CLLocationDegrees)
-                        let coordinate = MKCoordinateRegion(center: locationCoordinate, latitudinalMeters: 70, longitudinalMeters: 70)
-                        let artwork = Artwork(title: each["complaint_desc"].string!,
-                                              locationName: each["complaint_desc"].string!,
-                                              discipline: each["complaint_desc"].string!,
-                                              coordinate: CLLocationCoordinate2D(latitude: Double(each["latitude"].string!) as! CLLocationDegrees, longitude: Double(each["longitude"].string!) as! CLLocationDegrees))
-                        
-                        
-                        self.mapView.addAnnotation(artwork)
-                        self.mapView.setRegion(coordinate, animated: true)
-                        
-                        
+                        if each["status"].string! == "RESOLVED" {
+                            break
+                        }
+                        DispatchQueue.main.async(execute: { () -> Void in
+                            // 4: Stop the animation, here you have three options for the `animationStyle` property:
+                            // .expand: useful when the task has been compeletd successfully and you want to expand the button and transit to another view controller in the completion callback
+                            // .shake: when you want to reflect to the user that the task did not complete successfly
+                            // .normal
+                            
+                            
+                           
+                            let locationCoordinate = CLLocationCoordinate2D(latitude: Double(each["latitude"].string!) as! CLLocationDegrees, longitude: Double(each["longitude"].string!) as! CLLocationDegrees)
+                            let coordinate = MKCoordinateRegion(center: locationCoordinate, latitudinalMeters: 70, longitudinalMeters: 70)
+                            //   let artwork = Artwork(title: each["complaint_desc"].string!,
+                            //                         locationName: each["complaint_desc"].string!,
+                            //                         discipline: each["complaint_desc"].string!,
+                            //                          coordinate: CLLocationCoordinate2D(latitude: Double(each["latitude"].string!) as! CLLocationDegrees, longitude: Double(each["longitude"].string!) as! CLLocationDegrees))
+                            
+                            
+                            //     self.mapView.addAnnotation(artwork)
+                            //     self.mapView.setRegion(coordinate, animated: true)
+                            let marker = GMSMarker()
+                            marker.position = locationCoordinate
+                            marker.title = each["complaint_desc"].string!
+                            marker.snippet = each["complaint_desc"].string!
+                            marker.map = self.googleMaps
+                            
+                            self.googleMaps.camera = GMSCameraPosition(target:locationCoordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+                            
+                           
+                        })
+            
                     }
+                    
+                        
+                    
                 }
             }
         })

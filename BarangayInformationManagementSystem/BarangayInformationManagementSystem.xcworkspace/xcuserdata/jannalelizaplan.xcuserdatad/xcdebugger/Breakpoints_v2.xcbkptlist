@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.675105"
+            timestampString = "603433831.160285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -233,7 +233,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.675203"
+            timestampString = "603433831.1606261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -335,7 +335,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Clearance.swift"
-            timestampString = "593438670.229591"
+            timestampString = "599710663.5263619"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
@@ -454,7 +454,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Entity/Events.swift"
-            timestampString = "595695265.739864"
+            timestampString = "599216557.894825"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -624,11 +624,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-            timestampString = "595695265.740019"
+            timestampString = "606185800.785738"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "ComplaintsDetail"
             landmarkType = "3">
             <Locations>
@@ -874,13 +874,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.2788531"
+            timestampString = "599881662.2172821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "getStatus()"
-            landmarkType = "7">
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -891,13 +891,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.278969"
+            timestampString = "599881662.224142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -908,13 +908,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.279018"
+            timestampString = "599881662.22553"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "getStatus()"
-            landmarkType = "7">
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -925,13 +925,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.279065"
+            timestampString = "599881662.226034"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "getPermit()"
-            landmarkType = "7">
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -942,13 +942,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.279112"
+            timestampString = "599881662.226549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "getPermit()"
-            landmarkType = "7">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -959,13 +959,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.279178"
+            timestampString = "599881662.227016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -976,13 +976,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.279224"
+            timestampString = "599881662.228223"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -993,13 +993,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/CheckStatus.swift"
-            timestampString = "586621713.279268"
+            timestampString = "599881662.228698"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "getPermit()"
-            landmarkType = "7">
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1061,11 +1061,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-            timestampString = "595695265.740373"
+            timestampString = "606185800.786552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1078,11 +1078,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-            timestampString = "595695265.740405"
+            timestampString = "606185800.786956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1095,11 +1095,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-            timestampString = "595695265.740435"
+            timestampString = "606185800.78736"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "tappedDone()"
             landmarkType = "7">
             <Locations>
@@ -1111,11 +1111,11 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-                  timestampString = "593619186.819697"
+                  timestampString = "604068668.537474"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
                   offsetFromSymbolStart = "7131">
                </Location>
                <Location
@@ -1126,11 +1126,11 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-                  timestampString = "593619186.821528"
+                  timestampString = "604068668.538957"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
                   offsetFromSymbolStart = "236">
                </Location>
             </Locations>
@@ -1144,11 +1144,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-            timestampString = "595695265.740465"
+            timestampString = "606185800.78778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1161,11 +1161,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
-            timestampString = "595695265.7404979"
+            timestampString = "606185800.788214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1195,11 +1195,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.676833"
+            timestampString = "603433831.161285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "671"
-            endingLineNumber = "671"
+            startingLineNumber = "691"
+            endingLineNumber = "691"
             landmarkName = "saveImage(image:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1212,11 +1212,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.6769331"
+            timestampString = "603433831.161535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "680"
-            endingLineNumber = "680"
+            startingLineNumber = "700"
+            endingLineNumber = "700"
             landmarkName = "getSavedImage(named:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1263,11 +1263,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/BarangayClearance.swift"
-            timestampString = "597499924.677049"
+            timestampString = "601482952.0899971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1280,11 +1280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/BarangayClearance.swift"
-            timestampString = "597499924.677106"
+            timestampString = "601482952.090304"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1297,11 +1297,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/BarangayClearance.swift"
-            timestampString = "597499924.677163"
+            timestampString = "601482952.090446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1314,11 +1314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/BarangayClearance.swift"
-            timestampString = "597499924.6772079"
+            timestampString = "601482952.09057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "showAlert(applicationID:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1331,28 +1331,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/BusinessPermits.swift"
-            timestampString = "597499924.677267"
+            timestampString = "599745805.090082"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "tappedDone()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E09E473B-D220-448E-9F61-88EBDB02CE3E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BarangayInformationManagementSystem/Views/BusinessPermits.swift"
-            timestampString = "597499924.677321"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1365,11 +1348,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/BusinessPermits.swift"
-            timestampString = "597499924.677367"
+            timestampString = "599745805.090126"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "tappedDone()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1382,7 +1365,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Entity/Events.swift"
-            timestampString = "595695265.740724"
+            timestampString = "599216557.9060251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -1433,7 +1416,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Login.swift"
-            timestampString = "595695265.740844"
+            timestampString = "604134665.095721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -1450,11 +1433,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/AppDelegate.swift"
-            timestampString = "595663194.553318"
+            timestampString = "603243089.279948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "application(_:open:sourceApplication:annotation:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1463,11 +1446,11 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6949AF32-5324-4A8E-A866-AEC31C6A8325"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Login.swift"
-            timestampString = "595695265.7409"
+            timestampString = "604134665.096274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
@@ -1476,36 +1459,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6949AF32-5324-4A8E-A866-AEC31C6A8325 - e3527382dfdf9a9e"
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in BarangayInformationManagementSystem.LoginUser.tappedDone(TransitionButton.TransitionButton) -&gt; ()"
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/Login.swift"
-                  timestampString = "591418971.727412"
+                  timestampString = "604068668.602005"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "727">
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "660">
                </Location>
                <Location
-                  uuid = "6949AF32-5324-4A8E-A866-AEC31C6A8325 - dc7ba981c96dfb1e"
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;AWSMobileClient.SignInResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in BarangayInformationManagementSystem.LoginUser.tappedDone(TransitionButton.TransitionButton) -&gt; ()"
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/Login.swift"
-                  timestampString = "591418971.728608"
+                  timestampString = "604068668.60331"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "603">
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "570">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1518,7 +1499,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Login.swift"
-            timestampString = "595695265.7409641"
+            timestampString = "604134665.09654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
@@ -1569,7 +1550,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Login.swift"
-            timestampString = "595695265.741006"
+            timestampString = "604134665.0967849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
@@ -1620,7 +1601,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Login.swift"
-            timestampString = "595695265.741045"
+            timestampString = "604134665.097037"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "147"
@@ -1637,7 +1618,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Login.swift"
-            timestampString = "595695265.7410851"
+            timestampString = "604134665.097309"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "197"
@@ -1654,11 +1635,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.677526"
+            timestampString = "603433831.1621031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "752"
-            endingLineNumber = "752"
+            startingLineNumber = "772"
+            endingLineNumber = "772"
             landmarkName = "upload(src:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1667,15 +1648,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "76F74A4C-6520-42A8-9704-CF05F95730DE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.677572"
+            timestampString = "603433831.1623369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "870"
-            endingLineNumber = "870"
+            startingLineNumber = "899"
+            endingLineNumber = "899"
             landmarkName = "printableAlert(message:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1722,11 +1703,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678448"
+            timestampString = "603433831.162596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "778"
-            endingLineNumber = "778"
+            startingLineNumber = "798"
+            endingLineNumber = "798"
             landmarkName = "upload(src:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1739,11 +1720,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.6785049"
+            timestampString = "603433831.162829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "784"
-            endingLineNumber = "784"
+            startingLineNumber = "804"
+            endingLineNumber = "804"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1756,11 +1737,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678555"
+            timestampString = "603433831.1630599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "782"
-            endingLineNumber = "782"
+            startingLineNumber = "802"
+            endingLineNumber = "802"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1773,11 +1754,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678629"
+            timestampString = "603433831.16329"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "839"
-            endingLineNumber = "839"
+            startingLineNumber = "868"
+            endingLineNumber = "868"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
             <Locations>
@@ -1789,12 +1770,12 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/RegisterUser.swift"
-                  timestampString = "593619186.900786"
+                  timestampString = "604068668.671237"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "830"
-                  endingLineNumber = "830"
-                  offsetFromSymbolStart = "3922">
+                  startingLineNumber = "868"
+                  endingLineNumber = "868"
+                  offsetFromSymbolStart = "3284">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1804,12 +1785,12 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/RegisterUser.swift"
-                  timestampString = "593619186.9023809"
+                  timestampString = "604068668.672482"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "830"
-                  endingLineNumber = "830"
-                  offsetFromSymbolStart = "7578">
+                  startingLineNumber = "868"
+                  endingLineNumber = "868"
+                  offsetFromSymbolStart = "6940">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1822,11 +1803,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678672"
+            timestampString = "603433831.163518"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "841"
-            endingLineNumber = "841"
+            startingLineNumber = "870"
+            endingLineNumber = "870"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
             <Locations>
@@ -1838,12 +1819,12 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/RegisterUser.swift"
-                  timestampString = "593619186.906963"
+                  timestampString = "604068668.691476"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "832"
-                  endingLineNumber = "832"
-                  offsetFromSymbolStart = "3988">
+                  startingLineNumber = "870"
+                  endingLineNumber = "870"
+                  offsetFromSymbolStart = "3350">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1853,12 +1834,12 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/RegisterUser.swift"
-                  timestampString = "593619186.909219"
+                  timestampString = "604068668.692762"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "832"
-                  endingLineNumber = "832"
-                  offsetFromSymbolStart = "7758">
+                  startingLineNumber = "870"
+                  endingLineNumber = "870"
+                  offsetFromSymbolStart = "7120">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1871,11 +1852,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678719"
+            timestampString = "603433831.163749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "770"
-            endingLineNumber = "770"
+            startingLineNumber = "790"
+            endingLineNumber = "790"
             landmarkName = "upload(src:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1888,11 +1869,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678773"
+            timestampString = "603433831.163976"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "766"
-            endingLineNumber = "766"
+            startingLineNumber = "786"
+            endingLineNumber = "786"
             landmarkName = "upload(src:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1905,11 +1886,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678818"
+            timestampString = "603433831.164201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "773"
-            endingLineNumber = "773"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
             landmarkName = "upload(src:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1922,11 +1903,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.678859"
+            timestampString = "603433831.164427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "723"
-            endingLineNumber = "723"
+            startingLineNumber = "743"
+            endingLineNumber = "743"
             landmarkName = "upload(src:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1938,7 +1919,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Clearance.swift"
-            timestampString = "593438670.230939"
+            timestampString = "599710663.541724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -1954,7 +1935,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Clearance.swift"
-            timestampString = "593438670.231016"
+            timestampString = "599710663.541943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -1970,7 +1951,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/Clearance.swift"
-            timestampString = "593438670.231101"
+            timestampString = "599710663.542112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
@@ -1986,7 +1967,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
-            timestampString = "593447496.3505861"
+            timestampString = "604249348.055073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "centerMapOnLocation(location:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
+            timestampString = "604249348.05591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -2002,11 +1999,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
-            timestampString = "593447496.350628"
+            timestampString = "604249348.056259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "centerMapOnLocation(location:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2018,27 +2015,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
-            timestampString = "593447496.350667"
+            timestampString = "604249348.056578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "centerMapOnLocation(location:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
-            timestampString = "593447496.3507"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2046,47 +2027,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
-            timestampString = "593447496.350733"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "getComplaints()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
-            timestampString = "593447496.350765"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "getComplaints()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.67902"
+            timestampString = "603433831.1647249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "789"
-            endingLineNumber = "789"
+            startingLineNumber = "809"
+            endingLineNumber = "809"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2098,11 +2047,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.67908"
+            timestampString = "603433831.164956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "792"
-            endingLineNumber = "792"
+            startingLineNumber = "821"
+            endingLineNumber = "821"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2114,11 +2063,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
-            timestampString = "597499924.679131"
+            timestampString = "603433831.165186"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "795"
-            endingLineNumber = "795"
+            startingLineNumber = "824"
+            endingLineNumber = "824"
             landmarkName = "awsSignUp(username:password:)"
             landmarkType = "7">
             <Locations>
@@ -2130,12 +2079,12 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/RegisterUser.swift"
-                  timestampString = "593619186.9364229"
+                  timestampString = "604068668.7183059"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "787"
-                  endingLineNumber = "787"
-                  offsetFromSymbolStart = "2144">
+                  startingLineNumber = "825"
+                  endingLineNumber = "825"
+                  offsetFromSymbolStart = "1506">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2145,14 +2094,270 @@
                   moduleName = "BarangayInformationManagementSystem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/RegisterUser.swift"
-                  timestampString = "593619186.938363"
+                  timestampString = "604068668.719488"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "787"
-                  endingLineNumber = "787"
-                  offsetFromSymbolStart = "2165">
+                  startingLineNumber = "825"
+                  endingLineNumber = "825"
+                  offsetFromSymbolStart = "1527">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ComplaintsManagement.swift"
+            timestampString = "604249348.0568841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+            timestampString = "604068619.44085"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "confirm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+            timestampString = "604068619.445978"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "confirm()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarangayInformationManagementSystem.ConfirmSignUpViewController.confirm() -&gt; ()"
+                  moduleName = "BarangayInformationManagementSystem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+                  timestampString = "604068668.728994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;AWSMobileClient.SignUpResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BarangayInformationManagementSystem.ConfirmSignUpViewController.confirm() -&gt; ()"
+                  moduleName = "BarangayInformationManagementSystem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+                  timestampString = "604068668.731319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/RegisterUser.swift"
+            timestampString = "603433831.1655101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "826"
+            endingLineNumber = "826"
+            landmarkName = "awsSignUp(username:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+            timestampString = "604068619.446816"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "confirm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+            timestampString = "604068619.4470741"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "confirm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+            timestampString = "604068619.447314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "confirm()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarangayInformationManagementSystem.ConfirmSignUpViewController.confirm() -&gt; ()"
+                  moduleName = "BarangayInformationManagementSystem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+                  timestampString = "604068668.741412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;AWSMobileClient.SignUpResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BarangayInformationManagementSystem.ConfirmSignUpViewController.confirm() -&gt; ()"
+                  moduleName = "BarangayInformationManagementSystem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jannalelizaplan/Desktop/Github_new/BarangayMobileApplication/BarangayInformationManagementSystem/BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+                  timestampString = "604068668.742589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ConfirmSignUp.swift"
+            timestampString = "604068619.447561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "confirm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/Login.swift"
+            timestampString = "604134665.09802"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "tappedDone(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
+            timestampString = "606185800.789395"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "tappedDone()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
+            timestampString = "606185800.7898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "tappedDone()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarangayInformationManagementSystem/Views/ComplaintsDetail.swift"
+            timestampString = "606185800.790176"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "tappedDone()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
