@@ -35,13 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        GMSServices.provideAPIKey("AIzaSyDsURMkCygf23xg2jUPcTU8zPAH8m8MRnw")
-        let accessKey = "AKIAIQQLNLJEN3POLSOQ"
-        let secretKey = "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"
+        GMSServices.provideAPIKey("")
+        let accessKey = ""
+        let secretKey = ""
         let credentialsProvider = AWSStaticCredentialsProvider(accessKey: accessKey, secretKey: secretKey)
         let configuration = AWSServiceConfiguration(region: AWSRegionType.APSoutheast1, credentialsProvider: credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-7625476876021461~6669930536")
+        GADMobileAds.configure(withApplicationID: "")
         let cognitoAuth = AWSCognitoAuth.default()
         return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:
